@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import logo from "../images/logo/logo.svg";
+import logo from "../images/logo/logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
+  
   scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -17,6 +18,7 @@ export default class Navbar extends Component {
             alt="Logo"
             onClick={this.scrollToTop}
           />
+          <label className="logo-name">SRTG</label>
           <ul className="nav-items">
             <li className="nav-item">
               <Link
@@ -27,7 +29,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 1
+                <span>#</span>Aktuality
               </Link>
             </li>
             <li className="nav-item">
@@ -39,7 +41,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 2
+                <span>#</span>Tréningové centrum
               </Link>
             </li>
             <li className="nav-item">
@@ -51,7 +53,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 3
+                <span>#</span>Foto Galéria
               </Link>
             </li>
             <li className="nav-item">
@@ -63,7 +65,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 4
+                <span>#</span>O Nas
               </Link>
             </li>
             <li className="nav-item">
@@ -75,7 +77,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 5
+                <span>#</span>Kontakt
               </Link>
             </li>
           </ul>

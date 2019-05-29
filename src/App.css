@@ -1,6 +1,10 @@
 :root {
-  --off-white: #fafafa;
+  --off-white: white;
+  --red: #CF102D;
+  --blue: #374785;
 }
+
+
 .nav {
   background-color: var(--off-white);
   position: sticky;
@@ -8,12 +12,22 @@
   width: 100%;
   height: 80px;
   z-index: 1000;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 14px 0 rgba(99, 95, 95, 0.15);
 }
+
+/* #region navbar */
 
 .nav-logo {
   height: 60px;
   width: 60px;
+}
+
+.logo-name{
+  margin-left: 2rem;
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Montserrat','Arial Black',sans-serif;
 }
 
 .nav-logo:hover {
@@ -21,11 +35,10 @@
 }
 
 .nav .nav-content {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 0rem 3rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -33,19 +46,31 @@
 .nav-item {
   display: inline;
   margin-left: 2rem;
-  color: #333;
-}
-
-.nav-item:hover {
-  color: black;
+  font-weight: bold;
+  color: var(--blue);
   cursor: pointer;
 }
 
-.section {
+.nav-item span {
+  color:  var(--red);
+  font-size: 2rem;
+  vertical-align: sub;
+  padding-right: 2px;
 }
 
+.nav-items{
+  margin-left: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+/* #endregion navbar */
+
+/* #region section */
+
 .section-dark {
-  background: #333;
+  background:  #464866;
   color: white;
 }
 
@@ -54,3 +79,45 @@
   margin: 0 auto;
   padding: 40px;
 }
+
+/* #endregion section */
+
+/* #region Footer */
+
+.footer{
+  background-color: var(--off-white);
+  color: var(--blue);
+  font-family: 'Allan','Arial Black',sans-serif;
+  bottom: 0px;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(99, 95, 95, 0.15);
+  display: flex;
+}
+
+.social-logo {
+  height: 32px;
+  width: 32px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.created-by{
+  margin-left: 0.5rem;
+  font-size: 12px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.contact-info{
+  margin: 0 auto;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.created-by span{
+  color:var(--red);
+}
+/* #endregion Footer */

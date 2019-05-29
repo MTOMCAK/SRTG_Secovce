@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import logo from './images/logo/logo.svg';
 import './App.css';
 
 import Navbar from "./components/navbar";
 import Section from "./components/section";
+import Footer from "./components/footer";
 import dummyText from "./DummyText"
 
 class App extends Component {
@@ -12,35 +12,36 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Section
-          title="Section 1"
+          title="Aktuality"
           subtitle={dummyText}
           dark={true}
           id="section1"
         />
         <Section
-          title="Section 2"
+          title="Tréningové centrum"
           subtitle={dummyText}
           dark={false}
           id="section2"
         />
         <Section
-          title="Section 3"
+          title="Foto Galéria"
           subtitle={dummyText}
           dark={true}
           id="section3"
         />
         <Section
-          title="Section 4"
+          title="O Nas"
           subtitle={dummyText}
           dark={false}
           id="section4"
         />
         <Section
-          title="Section 5"
+          title="Kontakt"
           subtitle={dummyText}
           dark={true}
           id="section5"
         />
+        <Footer />
         </div>
     );
   }
